@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <div>
+    <h1>TutorCruncher Test</h1>
+  </div>
+  <div style="margin-bottom:50px">
+    <p>Dev test for potential developers based on Django.</p>
+
+    <p><strong>This is the first template you need to edit to build the views.</strong></p>
+
+    <p>You are required to prepare a web application that will allow users to view world bank data on education.</p>
+
+    <p>The user should be able to view lists of metrics, filter these metrics (eg. by country or type), sort the data in ascending or descending order and view a particular Metric details.</p>
+
+    <p>You may use Django's admin interface during development, but your final result should not use Django admin interface.</p>
+
+    <p>You might like to think about the following things while building the site:</p>
+    <ul>
+      <li><strong>Easy of Use</strong>: the site should be as intuitive and easy to use as possible.</li>
+      <li><strong>Aesthetics</strong>: the site should be modern and professional looking.</li>
+      <li><strong>Canonical Development Approach</strong>: you should use the standard approach for building views and implementing functionality to make it as easy as possible for someone else to take of the project and add features.</li>
+      <li><strong>Minimising Queries</strong>: to keep the site fast and avoid excessive server requirements if the site was used a lot.</li>
+    </ul>
+
+    <p>The basic process you will need to follow is:</p>
+
+    <ol>
+      <li>Take a look at <code>DevTest/load_data.py</code> to work out how the data looks.</li>
+      <li>Build the models in <code>DevTest/WorldBank/models.py</code> to represent that data.</li>
+      <li>Import the data by modifying <code>DevTest/load_data.py</code>.</li>
+      <li>Build the views to display the data.</li>
+    </ol>
+
+    <h2>To get started</h2>
+
+    <p>It's assumed here you are working on Linux or OSX and have python3.9 installed.</p>
+
+    <p>Setup a virtual environment and enable it (you may need to install virtualenv first):</p>
+
+    <pre><code>
+      virtualenv env
+      source env/bin/activate
+    </code></pre>
+
+    <p>install the required packages:</p>
+
+    <pre><code>
+      pip install -r requirements.txt
+    </code></pre>
+
+    <p>You can then run the dev-server with:</p>
+
+    <pre><code>
+      python manage.py runserver
+    </code></pre>
+
+    <p>Once you have build your models you can build the database with:</p>
+
+    <pre><code>
+      python manage.py migrate
+    </code></pre>
+  </div>
+{% endblock %}
